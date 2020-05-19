@@ -1,0 +1,22 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <a (click)="gotoBooksPage(library.id)"
+          ><tr *ngFor="let library of libraries">
+            <td>{{ library.id }}</td>
+            <td>{{ library.name }}</td>
+          </tr></a
+        >
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

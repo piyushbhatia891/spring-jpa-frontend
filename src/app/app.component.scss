@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  .libraries {
+    height: 700px;
+    .libraries-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+}
